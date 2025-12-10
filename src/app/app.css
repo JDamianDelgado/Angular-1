@@ -1,0 +1,88 @@
+.contenedorGeneral {
+  width: 99vw;
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.contenedorData {
+  width: 50vw;
+  height: auto;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  background-color: bisque;
+  border-radius: 1rem;
+  box-shadow: 0 3px 10px black;
+}
+
+.btn {
+  all: unset;
+  width: 40%;
+  border-radius: 1rem;
+  padding: 0.2rem;
+  background-color: rgba(165, 180, 180, 0.493);
+  margin: 0.4rem;
+}
+
+.btn:hover {
+  background-color: rgba(133, 87, 18, 0.418);
+  color: white;
+}
+.btn:active {
+  transform: scale(0.8);
+  box-shadow: 1px 1px 10px black;
+}
+.contador {
+  padding: 2rem;
+  font-size: 1.5rem;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 2rem;
+}
+.contador button {
+  all: unset;
+  font-weight: bold;
+  background-color: rgba(165, 180, 180, 0.493);
+  border-radius: 1rem;
+  width: 10vw;
+  transition: 0.2s;
+}
+.contador button:hover {
+  background-color: rgba(133, 87, 18, 0.418);
+  color: white;
+}
+.contador button:active {
+  transform: scale(0.8);
+  box-shadow: 1px 1px 10px black;
+}
+.modal {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedorModal {
+  height: 80vh;
+  width: 70vw;
+  overflow: hidden;
+  background: bisque;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  border-radius: 10px;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 10px black;
+  transition: 2s;
+}
+
+.contenedorModal img {
+  height: 80%;
+  width: auto;
+}
