@@ -14,7 +14,7 @@ export class App {
   presentacion =
     ' Aprendo angular para mejorar mi stack de tecnologias para poder mejorar en la programacion';
   imagenVisible = false;
-  imagenUrl = 'image.png';
+  imagenUrl = 'logoAngular.png';
   contador = 0;
   saludar() {
     alert(this.text);
