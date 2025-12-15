@@ -18,6 +18,7 @@ export class App {
   contador = 0;
   saludar() {
     alert(this.text);
+    this.presentacion = 'Mira el logo de angular';
   }
 
   mostrarImagen() {
@@ -25,17 +26,23 @@ export class App {
   }
 
   ocultarImagen() {
-    this.presentacion = 'Gracias por la visita';
+    this.presentacion = 'No te olvides de probar el contador';
     this.imagenVisible = false;
   }
   sumarContador() {
     this.contador = this.contador + 1;
+    if (this.contador > 10) {
+      this.presentacion = 'Has alcanzado el limite del contador';
+      this.contador = 10;
+    } else this.presentacion = 'Contador aumentado';
   }
   restarContador() {
     if (this.contador > 0) {
       this.contador = this.contador - 1;
+      this.presentacion = 'Contador disminuido';
     } else {
       this.contador = 0;
+      this.presentacion = 'El contador no puede ser menor a 0';
     }
   }
 }
